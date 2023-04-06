@@ -4,7 +4,7 @@ Simple_mycache实现了一个简易的内存缓存系统
 可以粗略的实现对缓存系统的内存控制，但出于现代编程语言自身的特性，内存控制在精度上有一定损失  
 （学习go语言过程中的造物.jpg）  
 # 包中可供使用的基本接口如下：
-//size:1KB 100KB 1MB 2MB 1GB  
+//设置缓存的最大内存size:1KB 100KB 1MB 2MB 1GB  
 SetMaxMemory(size string) bool  
 //将value写入缓存  
 Set(key string, val interface{}, expire time.Duration) bool  
